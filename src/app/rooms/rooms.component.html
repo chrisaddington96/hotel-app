@@ -1,0 +1,15 @@
+<h3>Available Rooms</h3>
+<ul class="rooms">
+    <li *ngFor="let room of rooms">
+        <div class="display-room" *ngIf="room.getAvailable() == true">
+            <a [href]=room.getImageSrc() target="_blank">
+                <img class="display-image" [src]=room.getImageSrc() [alt]=room.getRoomType()/>
+            </a>    
+            <div class="room-info">
+                <p>Room Type: {{room.getRoomType()}}</p>
+                <p>Price per night: ${{room.getRoomPricePerNight()}}</p>
+            </div>
+            
+        </div>
+        
+</ul>

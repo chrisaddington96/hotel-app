@@ -1,0 +1,16 @@
+
+a {
+    border: black;
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: cornflowerblue;
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    transition-timing-function: linear;
+    color: white;
+    background-color: #04AA6D;
+}
